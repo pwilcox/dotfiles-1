@@ -1,0 +1,15 @@
+[user]
+	name = Justin Kronz
+	email = justin@vitrue.com
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	excludesfile = /Users/justin/.gitignore_global
+[alias]
+	logr = log -M
+	prune-all = !git remote | xargs -n 1 git remote prune
+ 	remove-branch = "!sh -c 'git branch -D $1 && git push origin :$1' -"
+[github]
+	user = justin-vitrue
+	token = 9fd080da72fd0f07a72ce41b9fe9fc0f
