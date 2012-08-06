@@ -19,4 +19,6 @@ alias dsh='bundle exec unicorn -p3002'
 alias pub='bundle exec unicorn -p3003'
 alias tab='bundle exec unicorn -p3004'
 alias anl='bundle exec unicorn -p3005'
-
+alias mysql="/usr/local/Cellar/mysql/5.5.20/bin/mysqld --skip-grant &"
+alias force_del="git branch -D $1 && git push origin :$1"
+alias ossh=ssh -F ~/.ssh/proxy_config

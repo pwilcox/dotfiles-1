@@ -13,7 +13,11 @@ fi
 
 export NODE_PATH=/usr/local/lib/node_modules
 
-bindkey -v
+# -----------------------------------------------
+# Oracle Proxy Config 
+# -----------------------------------------------
+#export http_proxy=http://adc-proxy.oracle.com:80
+#export HTTP_PROXY=$http_proxy
 
 autoload -Uz compinit
 compinit
@@ -45,13 +49,13 @@ setopt prompt_subst
 # root prompt
 [ $UID = 0 ] && export PROMPT=$'%{\e[1;30m%}(%{\e[0;32m%}%F{red}%n%{\e[1;31m%}@%{\e[0;31m%}%F{red}%m%{\e[1;30m%}:%{\e[0;32m%}%F{magenta}%~%{\e[1;30m%})%{\e[0;32m%}\n${vcs_info_msg_0_}%F{magenta}%#%f '
 
-function zle-line-init zle-keymap-select {
-   RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-   RPS2=$RPS1
-   zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
+#function zle-line-init zle-keymap-select {
+#   RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+#   RPS2=$RPS1
+#   zle reset-prompt
+#}
+#zle -N zle-line-init
+#zle -N zle-keymap-select
 
 # -----------------------------------------------
 # Set up completion for hostnames
