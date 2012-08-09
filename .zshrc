@@ -70,11 +70,13 @@ fi
 
 hosts=(
 "$_etc_hosts[@]"
-#Add favourite hosts here, and zsh will autocomplete them
+#Add favourite hosts here, and zsh will autocomplete them   
+   cloud.vitrue.com
 )
 
 my_accounts=(
 #Add favourite accounts here, and zsh will autocomplete them
+   deploy@justin.dev.cloud.vitrue.com
 )
 # Import local favorite hosts and accounts
 [[ -s "$HOME/.hosts" ]] && . "$HOME/.hosts"

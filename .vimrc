@@ -1,10 +1,6 @@
 " John's Personal VIM settings
 " Maintainer: John Weathers <jweathers@gmail.com>
 
-" Activate pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 "We don't want the vi-compatible version
 set nocompatible
 
