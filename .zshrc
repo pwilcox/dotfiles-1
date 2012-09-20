@@ -71,12 +71,27 @@ fi
 hosts=(
 "$_etc_hosts[@]"
 #Add favourite hosts here, and zsh will autocomplete them   
-   cloud.vitrue.com
+   granada.lucenaresearch.com
+   sevilla.lucenaresearch.com
+   ars.newleveltech.net
+   heritage.newleveltech.net
+   brautigan.newleveltech.net
+   ars.objectwareinc.com
+   hsg.calllog.com
+   arsdb.objectwareinc.com
+   hsgdb.objectwareinc.om
+   sspbaweb.objectwareinc.com
 )
 
 my_accounts=(
 #Add favourite accounts here, and zsh will autocomplete them
-   deploy@justin.dev.cloud.vitrue.com
+  paul@granada.lucenaresearch.com
+  paul@sevilla.lucenaresearch.com
+  ec2-user@heritage.newleveltech.net
+  ec2-user@ars.newleveltech.net
+  ec2-user@brautigan.newleveltech.net
+  root@ars.objectwareinc.com
+  root@sspbaweb.objectwareinc.com
 )
 # Import local favorite hosts and accounts
 [[ -s "$HOME/.hosts" ]] && . "$HOME/.hosts"
